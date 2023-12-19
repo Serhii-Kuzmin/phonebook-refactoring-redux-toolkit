@@ -1,8 +1,8 @@
 import { ContactListStyle, ContactItemStyle } from './ContactsList.styled';
 import { ButtonStyle } from 'components/App.styled';
-import { getFilter } from 'redux/filterSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { delContact, getPhoneBookValue } from 'redux/phoneBookSlice';
+import { getFilter } from '../../redux/filterSlice';
+import { delContact, getPhoneBookValue } from '../../redux/phoneBookSlice';
 
 export const ContactsList = () => {
   const dispatch = useDispatch();
@@ -26,10 +26,9 @@ export const ContactsList = () => {
           <p>
             {name}: {number}
           </p>
-          <ButtonStyle
-            type="button"
-            onClick={() => deleteContact(id)}
-          ></ButtonStyle>
+          <ButtonStyle type="button" onClick={() => deleteContact(id)}>
+            Delete
+          </ButtonStyle>
         </ContactItemStyle>
       ))}
     </ContactListStyle>
