@@ -1,7 +1,7 @@
-import { Form } from "./Form/Form";
-import { ContactsList } from "./ContactsList/ContactsList";
-import { Filter } from "./Filter/Filter";
-import { Container } from "./App.styled";
+import { Form } from './Form/Form';
+import { ContactsList } from './ContactsList/ContactsList';
+import { Filter } from './Filter/Filter';
+import { Container } from './App.styled';
 
 export const App = () => (
   <Container>
